@@ -19,11 +19,6 @@ This repository contains my **complete coursework for CS51510**, including:
 
 All implementations strictly follow the specifications described in the submitted **PDF reports**.Every algorithm, data structure, and experiment referenced in the reports is reflected in the corresponding code or documentation.
 
-📂 Repository Structure
------------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── Homework/  │   ├── Homework1/  │   │   └── Raaj_Patel_Homework1_cs51510-001.pdf  │   ├── Homework2/  │   │   └── Raaj_Patel_Homework2_cs51510-001.pdf  │   ├── Homework3/  │   │   └── Raaj_Patel_Homework_3_cs51510-001.pdf  │   ├── Homework4/  │   │   └── Raaj_Patel_Homework4_CS51510-001.pdf  │   ├── Homework5/  │   │   └── Raaj_Patel_Homework5_CS51510-001.pdf  │  ├── Projects/  │   ├── Project1/  │   │   └── Project_Report_1.pdf  │   ├── Project2/  │   │   └── Project_Report_2.pdf  │   ├── Project3/  │   │   ├── bestpath.py  │   │   ├── data/  │   │   ├── outputs/  │   │   └── Project_Report_3.pdf  │  └── README.md   `
-
 🧠 Homework Summary & Learning Outcomes
 ---------------------------------------
 
