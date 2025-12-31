@@ -1,0 +1,63 @@
+Productions for v4_if_expr.min
+---------------------------------
+Program -> StmtList EOF
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> IfExpr
+IfExpr -> if BoolExpr then Expression else Expression
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+Comparison -> ... CompOp ArithExpr
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> ε

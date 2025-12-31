@@ -1,0 +1,10 @@
+int a, b, c, d;
+bool ok;
+
+a = 10;
+b = 3;
+
+c = -a + b * 4 // 2;
+d = (a - b) / 2;
+
+ok = c > d andalso (d < a orelse b == 0);

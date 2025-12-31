@@ -1,0 +1,73 @@
+Productions for v2_assign_expr.min
+---------------------------------
+Program -> StmtList EOF
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> ε

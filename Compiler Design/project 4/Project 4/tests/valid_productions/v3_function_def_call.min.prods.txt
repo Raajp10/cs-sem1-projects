@@ -1,0 +1,83 @@
+Productions for v3_function_def_call.min
+---------------------------------
+Program -> StmtList EOF
+StmtList -> Stmt StmtList
+Stmt -> FunctionDefStmt
+FunctionDefStmt -> fun IDENTIFIER '(' ParamList? ')' '=' Expression ';'
+ParamList -> Type IDENTIFIER (',' Type IDENTIFIER)*
+Type -> (int|double|bool|char|long)
+Type -> (int|double|bool|char|long)
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> literal
+StmtList -> Stmt StmtList
+Stmt -> AssignStmt
+AssignStmt -> IDENTIFIER AssignOp Expression ';'
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> FunctionCall
+FunctionCall -> IDENTIFIER '(' ArgList? ')'
+ArgList -> Expression (',' Expression)*
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+Expression -> BoolExpr
+BoolExpr -> BoolTerm ('orelse' BoolTerm)*
+BoolTerm -> BoolFactor ('andalso' BoolFactor)*
+BoolFactor -> Comparison
+Comparison -> ArithExpr (CompOp ArithExpr)?
+ArithExpr -> Term (('+' | '-') Term)*
+Term -> Value (('*' | '/' | '//') Factor)*
+Value -> Factor
+Factor -> IDENTIFIER
+StmtList -> ε

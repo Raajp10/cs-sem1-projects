@@ -1,0 +1,5 @@
+int x, y;
+double z;
+bool flag;
+char c;
+long big;

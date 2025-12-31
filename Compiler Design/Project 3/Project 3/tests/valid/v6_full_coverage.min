@@ -1,0 +1,16 @@
+int i;
+double d;
+char c;
+bool b;
+long l;
+
+i = 10;
+d = 3.14;
+c = 'x';
+b = true;
+
+{
+  int j;
+  j = -i // 2;
+  b = b andalso false orelse (i < 20);
+}

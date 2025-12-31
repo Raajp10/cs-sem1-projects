@@ -1,0 +1,5 @@
+bool ok;
+int a, b;
+a = 5;
+b = 10;
+ok = a < b andalso (b == 10 orelse a == 0);

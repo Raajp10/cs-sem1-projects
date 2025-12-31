@@ -1,0 +1,29 @@
+Productions for v1_simple_declare.min
+---------------------------------
+Program -> StmtList EOF
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> Stmt StmtList
+Stmt -> DeclareStmt
+DeclareStmt -> Type IdList ';'
+Type -> (int|double|bool|char|long)
+IdList -> IDENTIFIER (',' IDENTIFIER)*
+StmtList -> ε

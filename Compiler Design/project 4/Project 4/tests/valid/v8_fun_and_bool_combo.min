@@ -1,0 +1,11 @@
+fun isPositive(int x) = x > 0;
+
+int v;
+bool res;
+
+v = -10;
+res = isPositive(v);
+
+res = if res
+      then false
+      else true;

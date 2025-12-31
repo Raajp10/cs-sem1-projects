@@ -1,0 +1,5 @@
+fun add(int a, int b) = a + b;
+int x, y, z;
+x = 10;
+y = 20;
+z = add(x, y);
